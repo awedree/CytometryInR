@@ -6,10 +6,8 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
-<meta name="author" content="David Rach">
-<meta name="dcterms.date" content="2026-01-17">
 
-<title>Workstation Setup – Cytometry in R</title>
+<title>Announcements – Cytometry in R</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -25,25 +23,23 @@ ul.task-list li input[type="checkbox"] {
 </style>
 
 
-<script src="../../site_libs/quarto-nav/quarto-nav.js"></script>
-<script src="../../site_libs/quarto-nav/headroom.min.js"></script>
-<script src="../../site_libs/clipboard/clipboard.min.js"></script>
-<script src="../../site_libs/quarto-search/autocomplete.umd.js"></script>
-<script src="../../site_libs/quarto-search/fuse.min.js"></script>
-<script src="../../site_libs/quarto-search/quarto-search.js"></script>
-<meta name="quarto:offset" content="../../">
-<link href="../../course/00_Positron/index.html" rel="next">
-<link href="../../course/00_GitHub/index.html" rel="prev">
-<script src="../../site_libs/quarto-html/quarto.js" type="module"></script>
-<script src="../../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
-<script src="../../site_libs/quarto-html/popper.min.js"></script>
-<script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
-<script src="../../site_libs/quarto-html/anchor.min.js"></script>
-<link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-37eea08aefeeee20ff55810ff984fec1.css" rel="stylesheet" id="quarto-text-highlighting-styles">
-<script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
-<link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../../site_libs/bootstrap/bootstrap-8eaec6b9941db0f18eecf13b95a46332.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script src="site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="site_libs/quarto-nav/headroom.min.js"></script>
+<script src="site_libs/clipboard/clipboard.min.js"></script>
+<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="site_libs/quarto-search/fuse.min.js"></script>
+<script src="site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="./">
+<script src="site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="site_libs/quarto-html/popper.min.js"></script>
+<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="site_libs/quarto-html/anchor.min.js"></script>
+<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-37eea08aefeeee20ff55810ff984fec1.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="site_libs/bootstrap/bootstrap-8eaec6b9941db0f18eecf13b95a46332.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -85,17 +81,17 @@ gtag('config', 'G-LZ35J3XE4D', { 'anonymize_ip': true});
 <link rel="stylesheet" href="styles.css">
 </head>
 
-<body class="nav-sidebar floating nav-fixed quarto-light">
+<body class="nav-fixed quarto-light">
 
 <div id="quarto-search-results"></div>
   <header id="quarto-header" class="headroom fixed-top">
     <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
-    <a href="../../index.html" class="navbar-brand navbar-brand-logo">
-    <img src="../../images/hex.svg" alt="" class="navbar-logo">
+    <a href="./index.html" class="navbar-brand navbar-brand-logo">
+    <img src="./images/hex.svg" alt="" class="navbar-logo">
     </a>
-    <a class="navbar-brand" href="../../index.html">
+    <a class="navbar-brand" href="./index.html">
     <span class="navbar-title">Cytometry in R</span>
     </a>
   </div>
@@ -106,25 +102,25 @@ gtag('config', 'G-LZ35J3XE4D', { 'anonymize_ip': true});
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll me-auto">
   <li class="nav-item">
-    <a class="nav-link" href="../../index.html"> 
+    <a class="nav-link" href="./index.html"> 
 <span class="menu-text">About</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="../../Schedule.html"> 
+    <a class="nav-link" href="./Schedule.html"> 
 <span class="menu-text">Schedule</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="../../course/index.html"> 
+    <a class="nav-link" href="./course/index.html"> 
 <span class="menu-text">Course</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="../../Announcements.html"> 
+    <a class="nav-link active" href="./Announcements.html" aria-current="page"> 
 <span class="menu-text">Announcements</span></a>
   </li>  
 </ul>
             <ul class="navbar-nav navbar-nav-scroll ms-auto">
   <li class="nav-item">
-    <a class="nav-link" href="../../ExistingResources.html"> 
+    <a class="nav-link" href="./ExistingResources.html"> 
 <span class="menu-text">Existing Resources</span></a>
   </li>  
   <li class="nav-item">
@@ -132,7 +128,7 @@ gtag('config', 'G-LZ35J3XE4D', { 'anonymize_ip': true});
 <span class="menu-text">Discussions</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="../../Homeworks.html"> 
+    <a class="nav-link" href="./Homeworks.html"> 
 <span class="menu-text">Homeworks</span></a>
   </li>  
   <li class="nav-item compact">
@@ -151,16 +147,6 @@ gtag('config', 'G-LZ35J3XE4D', { 'anonymize_ip': true});
 </div>
       </div> <!-- /container-fluid -->
     </nav>
-  <nav class="quarto-secondary-nav">
-    <div class="container-fluid d-flex">
-      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
-        <i class="bi bi-layout-text-sidebar-reverse"></i>
-      </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../course/00_GitHub/index.html">Getting Started</a></li><li class="breadcrumb-item"><a href="../../course/00_WorkstationSetup/index.html">00 - Workstation Setup</a></li></ol></nav>
-        <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
-        </a>
-    </div>
-  </nav>
   <div id="quarto-announcement" data-announcement-id="517fd7fd2923fd64fe81c4cc75c6fa55" class="alert alert-info hidden"><i class="bi bi-info-circle quarto-announcement-icon"></i><div class="quarto-announcement-content">
 <p>See Course tab for Course Materials, see YouTube tab for livestream recordings</p>
 </div><i class="bi bi-x-lg quarto-announcement-action"></i></div>
@@ -168,178 +154,23 @@ gtag('config', 'G-LZ35J3XE4D', { 'anonymize_ip': true});
 <!-- content -->
 <div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
-  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation floating overflow-auto">
-    <div class="sidebar-menu-container"> 
-    <ul class="list-unstyled mt-1">
-        <li class="sidebar-item sidebar-item-section">
-      <div class="sidebar-item-container"> 
-            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true">
- <span class="menu-text">Getting Started</span></a>
-          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true" aria-label="Toggle section">
-            <i class="bi bi-chevron-right ms-2"></i>
-          </a> 
-      </div>
-      <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 show">  
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../../course/00_GitHub/index.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">00 - GitHub</span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../../course/00_WorkstationSetup/index.html" class="sidebar-item-text sidebar-link active">
- <span class="menu-text">00 - Workstation Setup</span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../../course/00_Positron/index.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">00 - Positron</span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../../course/00_Git/index.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">00 - Git</span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../../course/00_Quarto/index.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">00 - Quarto</span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../../course/00_Homeworks/index.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">00 - Getting Help</span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../../course/00_Floreada/index.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">00 - Floreada</span></a>
-  </div>
-</li>
-      </ul>
-  </li>
-        <li class="sidebar-item sidebar-item-section">
-      <div class="sidebar-item-container"> 
-            <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="false">
- <span class="menu-text">Intro to R</span></a>
-          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="false" aria-label="Toggle section">
-            <i class="bi bi-chevron-right ms-2"></i>
-          </a> 
-      </div>
-      <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth1 ">  
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../../course/01_InstallingRPackages/index.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">01 - Installing R Packages</span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../../course/02_FilePaths/index.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">02 - File Paths</span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../../course/03_InsideFCSFile/index.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">03 - Inside a .FCS file</span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../../course/04_IntroToTidyverse/index.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">04 - Intro to Tidyverse</span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../../course/05_GatingSets/index.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">05 - Gating Sets</span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../../course/06_Visualizing/index.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">06 - Visualizing With ggplot2</span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../../course/07_Transformations/index.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">07 - Applying Transformations</span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../../course/08_WaysToGate/index.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">08 - Ways to Gate</span></a>
-  </div>
-</li>
-      </ul>
-  </li>
-        <li class="sidebar-item sidebar-item-section">
-      <span class="sidebar-item-text sidebar-link text-start">
- <span class="menu-text">Cytometry Core</span></span>
-  </li>
-        <li class="sidebar-item sidebar-item-section">
-      <span class="sidebar-item-text sidebar-link text-start">
- <span class="menu-text">Beyond the Sandbox</span></span>
-  </li>
-        <li class="sidebar-item sidebar-item-section">
-      <span class="sidebar-item-text sidebar-link text-start">
- <span class="menu-text">The World is your Oyster</span></span>
-  </li>
-    </ul>
-    </div>
-</nav>
-<div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
 <!-- margin-sidebar -->
-    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-        <nav id="TOC" role="doc-toc" class="toc-active">
-    <h2 id="toc-title">On this page</h2>
-   
-  <ul>
-  <li><a href="#install-software-for" id="toc-install-software-for" class="nav-link active" data-scroll-target="#install-software-for">Install Software for</a>
-  <ul>
-  <li><a href="#windows" id="toc-windows" class="nav-link" data-scroll-target="#windows">Windows</a></li>
-  <li><a href="#macos" id="toc-macos" class="nav-link" data-scroll-target="#macos">MacOS</a></li>
-  <li><a href="#linux-debian" id="toc-linux-debian" class="nav-link" data-scroll-target="#linux-debian">Linux (Debian)</a></li>
-  </ul></li>
-  <li><a href="#additional-resources" id="toc-additional-resources" class="nav-link" data-scroll-target="#additional-resources">Additional Resources</a></li>
-  </ul>
-</nav>
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar zindex-bottom">
+        
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
-<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../course/00_GitHub/index.html">Getting Started</a></li><li class="breadcrumb-item"><a href="../../course/00_WorkstationSetup/index.html">00 - Workstation Setup</a></li></ol></nav>
+<header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Workstation Setup</h1>
+<h1 class="title">Announcements</h1>
 </div>
 
 
 
 <div class="quarto-title-meta">
 
-    <div>
-    <div class="quarto-title-meta-heading">Author</div>
-    <div class="quarto-title-meta-contents">
-             <p>David Rach </p>
-          </div>
-  </div>
     
-    <div>
-    <div class="quarto-title-meta-heading">Published</div>
-    <div class="quarto-title-meta-contents">
-      <p class="date">January 17, 2026</p>
-    </div>
-  </div>
   
     
   </div>
@@ -349,58 +180,25 @@ gtag('config', 'G-LZ35J3XE4D', { 'anonymize_ip': true});
 </header>
 
 
-<p><img src="../../images/WebsiteBanner.png" class="img-fluid"></p>
-<div style="text-align: right;">
-<p><a href="https://www.gnu.org/licenses/agpl-3.0.en.html"><img src="https://img.shields.io/badge/license-AGPLv3-blue.png" class="img-fluid" alt="AGPL-3.0"></a> <a href="http://creativecommons.org/licenses/by-sa/4.0/"><img src="https://img.shields.io/badge/License-CC%20BY--SA%204.0-lightgrey.svg" class="img-fluid" alt="CC BY-SA 4.0"></a></p>
-</div>
-<p>In the previous <a href="../../course/00_GitHub/index.html">section</a>, we first set up your <a href="https://github.com/">GitHub</a> account. Then we modified your GitHub profile and added a README section. Finally, we forked the <a href="https://github.com/UMGCCCFCSR/CytometryInR/">CytometryInR</a> repository so that you can easily retrieve the new course materials each week.</p>
-<p>It is now time to install the required software on your computer, which will get your work-station set up with everything needed for this course. Depending on your computers operating system, the installation requirements may differ a bit. In general, you will need to install the following software:</p>
-<p><a href="https://www.r-project.org/">R website</a> : The programming language we will be using throughout the course.</p>
-<p><a href="https://positron.posit.co/">Positron</a> : The integrated development environment (IDE) in which we will open, modify and run our code.</p>
-<p><a href="https://git-scm.com/">Git</a> : The version control software that will allow us to track changes to our files.</p>
-<p>Additionally, Windows users will need to install:</p>
-<p><a href="https://cran.r-project.org/bin/windows/Rtools/rtools45/rtools.html">RTools</a> : Used to build R packages from source code.</p>
-<p>You can find the operating system specific installation walkthroughs below. Once you have completed your specific walkthrough, return to this page and proceed to the <a href="../../course/00_Positron/">next section</a>.</p>
-<p><strong><em>Please note:</em></strong> For those using university or company administered computers, please be aware that you may not have the necessary permissions to install these directly, and may need to reach out to your IT department to help get the software installed and running correctly.</p>
-<p>If you are using your own computer, congratulations, you are your system administrator, and should already have the necessary permissions.</p>
-<section id="install-software-for" class="level1">
-<h1>Install Software for</h1>
-<section id="windows" class="level2">
-<h2 class="anchored" data-anchor-id="windows">Windows</h2>
-<p><img src="https://winaero.com/blog/wp-content/uploads/2021/06/Windows-11-Win-X-Menu-icon.png" class="img-fluid" style="width:25.0%"></p>
-<p>Installation walkthrough for <a href="../../course/00_WorkstationSetup/Windows.html">Windows</a></p>
-<p><br></p>
-<hr>
-</section>
-<section id="macos" class="level2">
-<h2 class="anchored" data-anchor-id="macos">MacOS</h2>
-<p><img src="https://substackcdn.com/image/fetch/$s_!G1lk!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F8ed3d547-94ff-48e1-9f20-8c14a7030a02_2000x2000.jpeg" class="img-fluid" style="width:25.0%"></p>
-<p>Installation walkthrough for <a href="../../course/00_WorkstationSetup/MacOS.html">MacOS</a></p>
-<p><br></p>
-<hr>
-</section>
-<section id="linux-debian" class="level2">
-<h2 class="anchored" data-anchor-id="linux-debian">Linux (Debian)</h2>
-<p><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTAx6camOf_G96Zcs2Zj34Yjmy0ysPd-p0oJQ&amp;s.png" class="img-fluid" style="width:25.0%"></p>
-<p>Installation walkthrough for <a href="../../course/00_WorkstationSetup/Linux.html">Linux</a></p>
-<p><br></p>
-<hr>
-</section>
-</section>
-<section id="additional-resources" class="level1">
-<h1>Additional Resources</h1>
-<p><a href="https://youtu.be/IEhnWKZB4p4?t=60">How to Download and Install Software on Windows 11</a></p>
-<p><a href="https://youtu.be/OH6cSQikbdw?si=ywXBU_eD2kl9AnLU">How to Install Software on a Mac</a></p>
-<p><a href="https://youtu.be/lC4d4EpMMxg?si=9TeFkwFzrRbzA-Ma">How to Download and Install Software on Linux</a></p>
-<p><a href="https://youtu.be/D6CunpqF04E?si=jeU6-XiSRj-ygDf_">Riffomonas Project: Installing R, RStudio, and packages for Windows and Mac OS X (CC077)</a></p>
-<p><a href="https://posit.co/blog/a-quick-tour-of-positron/">A brief tour of Positron</a></p>
-<p><a href="https://youtu.be/r8jQ9hVA2qs?si=jNastI7kNiGHHG9O">A brief introduction to Git for beginners</a></p>
-<div style="text-align: right;">
-<p><a href="https://www.gnu.org/licenses/agpl-3.0.en.html"><img src="https://www.gnu.org/graphics/agplv3-with-text-162x68.png" class="img-fluid" alt="AGPL-3.0"></a> <a href="http://creativecommons.org/licenses/by-sa/4.0/"><img src="https://licensebuttons.net/l/by-sa/4.0/88x31.png" class="img-fluid" alt="CC BY-SA 4.0"></a></p>
-</div>
+<p><img src="./images/WebsiteBanner.png" class="img-fluid"></p>
+<p>For previous course announcements emails, see the links below.</p>
+<ul>
+<li><p>January 21, 2026 <a href="https://github.com/UMGCCCFCSR/CytometryInR/discussions/7">Cytometry in R - Start Date, Livestream Times, Pre-Course Materials</a></p></li>
+<li><p>February 01, 2026 <a href="https://github.com/UMGCCCFCSR/CytometryInR/discussions/11">Cytometry In R - Week #1 - Installing R packages</a></p></li>
+<li><p>February 09, 2026 <a href="https://github.com/UMGCCCFCSR/CytometryInR/discussions/41">Cytometry in R - Week # 2 - File Paths</a></p></li>
+<li><p>February 16, 2026 <a href="https://github.com/UMGCCCFCSR/CytometryInR/discussions/65">Cytometry in R - Week #03 - Inside an FCS File</a></p></li>
+<li><p>February 22, 2026 <a href="https://github.com/UMGCCCFCSR/CytometryInR/discussions/85">Cytometry in R - Week #4 - Introduction to Tidyverse</a></p></li>
+<li><p>March 01, 2026 <a href="https://github.com/UMGCCCFCSR/CytometryInR/discussions/103">Cytometry in R - Week #5 - Gating Sets</a></p></li>
+<li><p>March 10, 2026 <a href="https://github.com/UMGCCCFCSR/CytometryInR/discussions/128">No Class This Week</a></p></li>
+<li><p>March 17, 2026 <a href="https://github.com/UMGCCCFCSR/CytometryInR/discussions/132">Cytometry in R - Week # 6 - Visualizing with ggplot2</a></p></li>
+<li><p>March 24, 2026 <a href="https://github.com/UMGCCCFCSR/CytometryInR/discussions/145">Cytometry in R - Week # 07 - Applying Transformations</a></p></li>
+<li><p>March 30, 2026 <a href="https://github.com/UMGCCCFCSR/CytometryInR/discussions/151">Cytometry in R - Course Feedback Survey #1</a></p></li>
+<li><p>April 07, 2026 <a href="https://github.com/UMGCCCFCSR/CytometryInR/discussions/159">Cytometry in R - Week # 08 - Manual and Automated Gating</a></p></li>
+<li><p>April 12, 2026 <a href="https://github.com/UMGCCCFCSR/CytometryInR/discussions/162">Cytometry in R - Week # 09 - It’s Raining Functions!</a></p></li>
+</ul>
+<p><img src="images/YouTubeHex.png" class="img-fluid"></p>
 
 
-</section>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
@@ -802,18 +600,6 @@ gtag('config', 'G-LZ35J3XE4D', { 'anonymize_ip': true});
     }
   });
   </script>
-<nav class="page-navigation">
-  <div class="nav-page nav-page-previous">
-      <a href="../../course/00_GitHub/index.html" class="pagination-link" aria-label="00 - GitHub">
-        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">00 - GitHub</span>
-      </a>          
-  </div>
-  <div class="nav-page nav-page-next">
-      <a href="../../course/00_Positron/index.html" class="pagination-link" aria-label="00 - Positron">
-        <span class="nav-page-text">00 - Positron</span> <i class="bi bi-arrow-right-short"></i>
-      </a>
-  </div>
-</nav>
 </div> <!-- /content -->
 <footer class="footer">
   <div class="nav-footer">
@@ -824,7 +610,7 @@ gtag('config', 'G-LZ35J3XE4D', { 'anonymize_ip': true});
       &nbsp;
     </div>
     <div class="nav-footer-right">
-<p><img src="../../images/AGPL3.png" class="img-fluid" alt="AGPL-3.0"> <img src="../../images/CCBYSA.png" class="img-fluid" alt="CC-BY-SA"></p>
+<p><img src="./images/AGPL3.png" class="img-fluid" alt="AGPL-3.0"> <img src="./images/CCBYSA.png" class="img-fluid" alt="CC-BY-SA"></p>
 </div>
   </div>
 </footer>

@@ -6,6 +6,8 @@ project:
     - Schedule.qmd
     - ExistingResources.qmd
     - PackageWalkthroughs.qmd
+    - Homeworks.qmd
+    - Announcements.qmd
     - course/index.qmd
     - course/TakeAwayGallery.qmd
     - 00_*
@@ -17,6 +19,7 @@ project:
     - 06_*
     - 07_*   
     - 08_* 
+    - 09_*
 website:
   google-analytics: "G-LZ35J3XE4D"
   announcement: 
@@ -37,11 +40,15 @@ website:
         href: Schedule.qmd
       - text: "Course"
         href: course/index.qmd
+      - text: "Announcements"
+        href: Announcements.qmd        
     right:
     - text: Existing Resources
       href: ExistingResources.qmd
     - text: Discussions
       href: https://github.com/UMGCCCFCSR/CytometryInR/discussions
+    - text: Homeworks
+      href: Homeworks.qmd
     - icon: youtube
       href: https://www.youtube.com/@CytometryInR
       aria-label: YouTube
